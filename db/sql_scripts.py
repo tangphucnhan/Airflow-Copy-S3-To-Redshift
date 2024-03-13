@@ -1,0 +1,21 @@
+CREATE_TABLE = """
+CREATE TABLE IF NOT EXISTS bills
+(
+    store_id INTEGER NOT NULL,
+    item CHARACTER(255) NOT NULL,
+    quantity INTEGER NOT NULL,
+    price_usd DOUBLE PRECISION NOT NULL,
+    staff_id CHARACTER(125) NOT NULL,
+    datetime CHARACTER(125) NOT NULL
+);
+"""
+
+COPY_S3_TO_REDSHIFT = """
+COPY bills FROM '{0}' 
+IAM_ROLE '{1}' 
+FORMAT AS CSV DELIMITER ',' QUOTE '"' 
+IGNOREHEADER 1 
+REGION AS '{2}'
+{3};
+"""
+

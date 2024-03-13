@@ -1,0 +1,5 @@
+setuptools~=65.5.1
+pendulum~=3.0.0
+boto3~=1.34.59
+python-dotenv~=1.0.1
+prettyprinter~=0.18.0
