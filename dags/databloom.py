@@ -2,7 +2,7 @@
 If you have your own local folder structure, and you put Airflow code somewhere.
 Run below command in terminal to link the dag file to 'dags' folder of AIRFLOW_PATH, then Airflow will load dag.
 Note: use absolute path
--F to force to overwrite
+-F to force to override
 
 ln -Fs /User/path/to/dag_1.py /User/airflow/path/dags/
 """
