@@ -6,13 +6,13 @@ This example walks through how to set up an Airflow to transfer data from lakeho
 
 ### Prerequisites
 
-> #### Make sure you have already completed these stuffs:
-> - [ ] Register Redshift Service
-> - [ ] Create IAM user and access key to access S3
-> - [ ] Create IAM role, associate IAM roles to Redshift
+> #### Make sure you have already completed these steps:
+> - [x] Register Redshift Service
+> - [x] Create IAM user and access key to access S3
+> - [x] Create IAM role, associate IAM roles to Redshift
 
 
-### Config
+### Configuration
 
 Sometimes, we have some kinds of data lakehouse to take advantage of these resources.
 And we need to gather data to a warehouse from all lakehouses.
@@ -27,7 +27,7 @@ Copy file ```stage.env``` to ```.env```
 
 - If ```is_multi_files = False``` then task flow is:
 
-load_s3_to_redshift >> teardown
+  ```load_s3_to_redshift >> teardown```
 
 - If ```is_multi_files = True```, it needs one more step to prepare manifest file before loads to Redshift.
 
