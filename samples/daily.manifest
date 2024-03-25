@@ -1,8 +1,0 @@
-{
-    'entries': [
-        {'url': 's3://databloom/20240303_191818_3.csv'},
-        {'url': 's3://databloom/20240303_191818_2.csv'},
-        {'url': 's3://databloom/20240303_191818_1.csv'},
-        {'url': 's3://databloom/20240303_191818_4.csv'}
-    ]
-}
