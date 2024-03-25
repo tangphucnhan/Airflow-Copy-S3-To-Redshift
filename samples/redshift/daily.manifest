@@ -1,0 +1,8 @@
+{
+    "entries": [
+        {"url":"s3://cafebills/redshift/redshift_bill_001.csv"},
+        {"url":"s3://cafebills/redshift/redshift_bill_002.csv"},
+        {"url":"s3://cafebills/redshift/redshift_bill_003.csv"},
+        {"url":"s3://cafebills/redshift/redshift_bill_004.csv"}
+    ]
+}
