@@ -35,5 +35,5 @@ Copy file ```stage.env``` to ```.env```
 
 **The table on Redshift would be like this**
 
-![](images/rs_table.png)
+![](images/redshift_table.png)
 
